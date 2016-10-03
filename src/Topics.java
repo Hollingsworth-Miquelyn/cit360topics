@@ -3,7 +3,7 @@ import java.util.*;
 public class Topics {
     public static void main(String[] args){
 
-        //The Collection Interface
+        //The Collection Interfaces
         //ArrayList
         List a1 = new ArrayList();
         a1.add("Miquelyn");
@@ -90,6 +90,28 @@ public class Topics {
         tm.put("Lincoln", new Double(balance + 1000));
         System.out.println("Lincolns's new balance: " + tm.get("Lincoln"));
 
+        //Collection Classes
+        //ArrayList
+        //create an array list
+        ArrayList al = new ArrayList();
+        System.out.println("Initial size of al: " + al.size());
 
+        //add elements to the array list
+        al.add("This is 5.");
+        al.add("This is 3.");
+        al.add("This is 4.");
+        al.add("This is 1.");
+        al.add("This is 2.");
+        al.add(1, "A2");
+        System.out.println("Size of al after additions: " + al.size());
+
+        //display the array list
+        System.out.println("Contents of al: " + al);
+
+        //Remove elements from the array list
+        al.remove("This is 3.");
+        al.remove(3);
+        System.out.println("Size of al after deletions: " +al.size());
+        System.out.println("Contents of al: " + al);
     }
 }
